@@ -1,0 +1,268 @@
+@font-face {
+  font-family: scaryfont;
+  src: url(./Scaryfont.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+#body{
+  background-color: rgb(40, 45, 76);
+}
+#main{
+  /* border: 2px solid rgb(119, 5, 232); */
+  height: 95vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.start{
+  /* border: 2px solid white; */
+  height: 60vh;
+}
+
+#title{
+  color: whitesmoke;
+  font-family: "Arvo", cursive;
+  font-size: 5rem;
+  text-shadow: 0.2rem 0.2rem rgb(21, 139, 174);
+  margin-top: 3rem;
+}
+
+.set{
+  /* border: 1px solid rgb(247, 165, 13); */
+  margin-top: 5rem;
+  height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.drum{
+  margin: 1rem;
+  width: 8rem;
+  height: 8rem;
+  border: 0.5rem solid #42568d;
+  border-radius: 1rem;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 0.2rem 0.2rem #b0ddec;
+  outline: none;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.w {
+  background-image: url("./images/tom1.png");
+  background-size: cover;
+}
+
+.a {
+  background-image: url("./images/tom2.png");
+  background-size: cover;
+}
+
+.s {
+  background-image: url("./images/tom3.png");
+  background-size: cover;
+}
+
+.d {
+  background-image: url("./images/tom4.png");
+  background-size: cover;
+}
+
+.j {
+  background-image: url("./images/snare.png");
+  background-size: cover;
+}
+
+.k {
+  background-image:url("./images/crash.png") ;
+  background-size: cover;
+}
+
+.l {
+  background-image: url("./images/kick.png");
+  background-size: cover;
+}
+
+#game-over{
+  /* border: 2px solid greenyellow; */
+  height: 12vh;
+  font-family: scaryfont;
+  font-size: 4rem;
+  color: rgb(222, 32, 32);
+  text-shadow: 0.3rem 0.3rem rgb(76, 47, 47);
+  letter-spacing: 0.8rem;
+  visibility: hidden;
+}
+
+footer{
+  /* border: 1px solid yellow; */
+  text-align: center;
+}
+.footerName{
+color: azure;
+}
+#github,#linkedin{
+  width: 20px;
+  height: 20px;
+}
+
+a{
+  color:azure;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #129ac7;
+  opacity: 0.5;
+}
+
+.end{
+  background-image: url("./images/scary.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+ @media screen and (max-width: 1226px) {
+  #title{
+    font-size: 8rem;
+    margin-top: 3rem;
+  }
+
+  .set{
+    height: 40vh;
+    margin-top: 3rem;
+  }
+
+  .drum{
+    margin: 0.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 4.5rem;
+  }
+  .end{
+    background-size: 1225px 620px;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  #title{
+    font-size: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .set{
+    height: 38vh;
+    margin-top: 4rem;
+  }
+  
+  .drum{
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+  .end{
+    background-size: 765px 620px;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  #title{
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .set{
+    height: 34vh;
+    margin-top: 3rem;
+  }
+
+  .drum{
+    margin: 0.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 3rem;
+  }
+
+  .end{
+    background-size: 425px 620px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #title{
+    font-size: 10rem;
+    margin-top: 1rem;
+  }
+
+  .set{
+    height: 30vh;
+    margin-top: 1rem;
+  }
+
+  .drum{
+    margin: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .end{
+    background-size: 380px 620px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #title{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .set{
+    height: 30vh;
+    margin-top: 3rem;
+  }
+
+  .drum{
+    margin: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .end{
+    background-size: 320px 620px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
