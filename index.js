@@ -11,16 +11,12 @@ let body = document.querySelector("#body")
 array_drums.forEach((drum)=>{
     drum.addEventListener("click",(event)=>{
         //console.log(event.target.innerHTML);
-        // drums_sounds(event.target.innerHTML);  
-        // btn_style(event.target.innerHTML)
         playing(event.target.innerHTML)
     })
 })
 
 document.addEventListener("keypress",(e)=>{
     //console.log(e);
-    // drums_sounds(e.key);
-    // btn_style(e.key)
     playing(e.key);
 })
 
@@ -28,7 +24,6 @@ document.addEventListener("keypress",(e)=>{
 function playing (value){
     let random_number = Math.floor(Math.random()*7);
     let scare = new Audio("sounds/Scare.mp3");
-    //console.log(Math.floor(random_number));
     if(array_alphabet.includes(value)){
         if(array_alphabet.indexOf(value)==random_number && start.style.visibility != "hidden"){
             console.log(random_number);
